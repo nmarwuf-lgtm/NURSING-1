@@ -12,12 +12,12 @@
 const TelegramAnalytics = {
 
   // ▼▼▼ ضع بياناتك هنا ▼▼▼
-  BOT_TOKEN: 'YOUR_BOT_TOKEN_HERE',
-  CHAT_ID:   'YOUR_CHAT_ID_HERE',
+  BOT_TOKEN: '6238470351:AAEIrglYe2-V5BVK_ME3g3S04iZSuFQ7oKU',
+  CHAT_ID:   '1350971290',
   // ▲▲▲ ▲▲▲ ▲▲▲ ▲▲▲ ▲▲▲
 
   _ok() {
-    return this.BOT_TOKEN !== '6238470351:AAEnXpTDD3fGPaj4X7lW_79GxC06FM1Xv8s' &&
+    return this.BOT_TOKEN !== '6238470351:AAEIrglYe2-V5BVK_ME3g3S04iZSuFQ7oKU' &&
            this.CHAT_ID   !== '1350971290'   &&
            this.BOT_TOKEN.length > 10;
   },
