@@ -144,6 +144,19 @@ const SlideUI = {
             `).join('')}
           </div>`;
 
+      case 'photo-gallery':
+        return `
+          <div class="photo-gallery-grid">
+            ${b.items.map(item => `
+              <a href="${s(item.url)}" target="_blank" rel="noopener noreferrer"
+                 class="photo-card" style="--acc:${accent}">
+                <span class="photo-num">${item.num}</span>
+                <span class="photo-label">صورة ${item.num}</span>
+                <span class="photo-arrow">↗</span>
+              </a>
+            `).join('')}
+          </div>`;
+
       default: return '';
     }
   }
