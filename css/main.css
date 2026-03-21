@@ -1005,3 +1005,68 @@ mark { background: rgba(251,191,36,.35); color: var(--t1); border-radius: 2px; p
     color-scheme: dark;
   }
 }
+
+/* ── Photo Gallery (Chapter 8) ────────────────── */
+.photo-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+@media (max-width: 400px) {
+  .photo-gallery-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 14px 8px;
+  border-radius: 14px;
+  background: var(--surface2);
+  border: 2px solid var(--acc, #f59e0b);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform .15s, box-shadow .15s;
+  cursor: pointer;
+}
+.photo-card:active { transform: scale(.96); }
+.photo-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--acc, #f59e0b);
+  line-height: 1;
+}
+.photo-label {
+  font-size: .72rem;
+  color: var(--text2);
+  text-align: center;
+}
+.photo-arrow {
+  font-size: .85rem;
+  color: var(--acc, #f59e0b);
+}
+
+/* ── Memorial Badge ───────────────────────────── */
+.mem-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 auto 10px;
+  padding: 6px 13px 6px 10px;
+  border-radius: 30px;
+  border: 1px solid rgba(200,168,80,.3);
+  background: rgba(200,168,80,.07);
+}
+.mem-dove { font-size: .95rem; line-height: 1; flex-shrink: 0; }
+.mem-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  text-align: right;
+}
+.mem-top  { font-size: .6rem; color: var(--t2); letter-spacing: .02em; }
+.mem-name { font-size: .72rem; font-weight: 600; color: #c9a84c; line-height: 1.3; }
+.mem-dua  { font-size: .6rem; color: var(--t2); font-style: italic; }
