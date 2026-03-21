@@ -1317,16 +1317,694 @@ const DB = {
     },
 
     // ════════════════════════════════════════════════════════
-    // CHAPTER 5 — COMING SOON
+    // CHAPTER 5 — VITAL SIGNS (Slides 81–102)
     // ════════════════════════════════════════════════════════
     {
       id: 5,
-      title: "الفصل الخامس — قريباً",
-      titleEn: "Chapter 5 — Coming Soon",
-      icon: "📚",
-      accent: "#a78bfa",
-      dark:   "#150d2a",
-      slides: [],
+      title: "العلامات الحيوية",
+      titleEn: "Vital Signs",
+      icon: "❤️",
+      accent: "#f43f5e",
+      dark:   "#2d0a14",
+      slides: [
+
+        {
+          id: "5-thermometers",
+          heading: "أجهزة قياس الحرارة — Clinical Thermometers",
+          body: [
+            {
+              type: "bilingual",
+              en: "Instruments used to measure body temperature:",
+              ar: "الأجهزة المستخدمة لقياس درجة حرارة الجسم:"
+            },
+            {
+              type: "numbered-bilingual",
+              items: [
+                { en: "Digital thermometer", ar: "الميزان الزئبقي الزجاجي" },
+                { en: "Glass thermometer", ar: "الميزان الزجاجي السابقي" },
+                { en: "Tympanic thermometer", ar: "جهاز خاص للأذن" },
+                { en: "Electronic Thermometer", ar: "الميزان الإلكتروني" },
+                { en: "Chemical Thermometer", ar: "الشريط الكيميائي (قليل الاستخدام)" }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "5-elevated-temp",
+          heading: "ارتفاع حرارة الجسم — Elevated Body Temperature",
+          body: [
+            {
+              type: "term",
+              en: "Fever",
+              ar: "الحمّى",
+              phonetic: "ˈfiːvər",
+              def_en: "A condition in which the body temperature exceeds 37.4°C.",
+              def_ar: "هي الحالة التي تتجاوز فيها حرارة الجسم 37.4 درجة مئوية."
+            },
+            {
+              type: "term",
+              en: "Pyrexia",
+              ar: "بيركسيا",
+              phonetic: "paɪˈreksɪə",
+              def_en: "A condition in which the temperature is warmer than the normal set point.",
+              def_ar: "مصطلح آخر للحمّى: هي الحالة التي تكون فيها حرارة الجسم أكثر دفئاً من الطبيعي."
+            },
+            {
+              type: "term",
+              en: "Hyperthermia",
+              ar: "ارتفاع حرارة الجسم",
+              phonetic: "ˌhaɪpərˈθɜːrmɪə",
+              def_en: "A condition in which core temperature is excessively high and exceeds 40.6°C.",
+              def_ar: "هي الحالة التي تتجاوز فيها حرارة الجسم الداخلية 40.6 درجة مئوية."
+            }
+          ]
+        },
+
+        {
+          id: "5-nursing-fever",
+          heading: "التدخلات التمريضية في ارتفاع الحرارة — Nursing Interventions",
+          body: [
+            {
+              type: "bilingual",
+              en: "Nursing managements/Interventions for elevated body temperature:",
+              ar: "الإجراءات أو التدخلات التمريضية في حالة ارتفاع درجة الحرارة:"
+            },
+            {
+              type: "numbered-bilingual",
+              items: [
+                { en: "Increase fluids intake.", ar: "تشجيع المريض على زيادة شرب السوائل." },
+                { en: "Rest.", ar: "تشجيع المريض على الراحة." },
+                { en: "Antipyretics.", ar: "إعطاء المريض أدوية خافضة للحرارة." },
+                { en: "Provide low caloric diet.", ar: "تناول الأطعمة ذات السعرات الحرارية القليلة." },
+                { en: "Cold compresses (on forehead, axillary, groin area, pelvic).", ar: "وضع كمادات ماء بارد على جبهة الرأس أو الإبط أو على الحوض." },
+                { en: "Increase room ventilation.", ar: "زيادة تهوية الغرفة." },
+                { en: "Remove extra clothes.", ar: "تشجيع المريض على تخفيف الملابس." }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "5-hypothermia",
+          heading: "انخفاض حرارة الجسم — Hypothermia",
+          body: [
+            {
+              type: "term",
+              en: "Hypothermia",
+              ar: "انخفاض حرارة الجسم",
+              phonetic: "ˌhaɪpəʊˈθɜːrmɪə",
+              def_en: "Core body temperature less than 35°C.",
+              def_ar: "هي الحالة التي يكون فيها حرارة الجسم الداخلية أقل من 35 درجة مئوية."
+            },
+            {
+              type: "bilingual",
+              en: "Nursing managements:",
+              ar: "التدخلات التمريضية:"
+            },
+            {
+              type: "numbered-bilingual",
+              items: [
+                { en: "Raise room temperature.", ar: "رفع حرارة الغرفة." },
+                { en: "More clothes and covers.", ar: "ارتداء ملابس ووضع أغطية إضافية." },
+                { en: "Provide worm fluids.", ar: "تشجيع المريض على شرب السوائل الدافئة." },
+                { en: "Massage the skin to produce warmth.", ar: "عمل مساج لتدفئة الجسم." },
+                { en: "Worm compresses.", ar: "استعمال كمادات ماء دافئة." }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "5-pulse-intro",
+          heading: "ثانياً النبض — Pulse",
+          body: [
+            {
+              type: "term",
+              en: "Pulse",
+              ar: "النبض",
+              phonetic: "pʌls",
+              def_en: "Wave-like sensation that can be palpated in peripheral arteries.",
+              def_ar: "النبض هو عبارة عن إحساس يشبه الموجة يمكن لمسه في الشرايين الطرفية."
+            },
+            {
+              type: "term",
+              en: "Pulse rate",
+              ar: "معدل النبض",
+              phonetic: "pʌls reɪt",
+              def_en: "Number of peripheral pulsation in a minute.",
+              def_ar: "معدل النبض: هو عدد النبضات الطرفية في الدقيقة الواحدة."
+            },
+            {
+              type: "bilingual",
+              en: "The normal pulse rate for adults: 60 to 100 times per minute at rest.",
+              ar: "معدل النبض الطبيعي عند البالغين هو من 60 إلى 100 نبضة في الدقيقة."
+            },
+            {
+              type: "bilingual",
+              en: "Pulse Rate = Heart Rate",
+              ar: "معدل النبض = معدل القلب"
+            }
+          ]
+        },
+
+        {
+          id: "5-abnormal-pulse",
+          heading: "معدل النبض غير الطبيعي — Abnormal Pulse Rate",
+          body: [
+            {
+              type: "bilingual",
+              en: "1. Rapid pulse rate:",
+              ar: "١. معدل النبض السريع:"
+            },
+            {
+              type: "term",
+              en: "Tachycardia",
+              ar: "تاكي كارديا",
+              phonetic: "ˌtækɪˈkɑːrdɪə",
+              def_en: "Heart rate more than 100 b/m for adult.",
+              def_ar: "هي الحالة التي يكون فيها معدل النبض أكثر من 100 نبضة في الدقيقة الواحدة عند البالغين."
+            },
+            {
+              type: "term",
+              en: "Palpitation",
+              ar: "الخفقان",
+              phonetic: "ˌpælpɪˈteɪʃən",
+              def_en: "Awareness of one's own heart.",
+              def_ar: "هو شعور الشخص بنبض قلبه."
+            },
+            {
+              type: "bilingual",
+              en: "2. Slow pulse rate:",
+              ar: "٢. معدل النبض البطيء:"
+            },
+            {
+              type: "term",
+              en: "Bradycardia",
+              ar: "برادي كارديا",
+              phonetic: "ˌbrædɪˈkɑːrdɪə",
+              def_en: "Heart rate less than 60 b/m for adults.",
+              def_ar: "هي الحالة التي يكون فيها معدل النبض أقل من 60 نبضة في الدقيقة الواحدة عند البالغين."
+            }
+          ]
+        },
+
+        {
+          id: "5-pulse-rates-table",
+          heading: "معدلات النبض الطبيعية حسب العمر — Normal Pulse Rates",
+          body: [
+            {
+              type: "bilingual",
+              en: "Normal Pulse Rates per Minute at Various Ages:",
+              ar: "معدلات النبض الطبيعية في الدقيقة حسب الفئة العمرية:"
+            },
+            {
+              type: "checkmarks",
+              items: [
+                { en: "Newborn: 120–160 (avg 140)", ar: "المولود الجديد: 120–160 (معدل 140)" },
+                { en: "1–12 months: 100–140 (avg 120)", ar: "1–12 شهر: 100–140 (معدل 120)" },
+                { en: "1–2 years: 90–130 (avg 110)", ar: "1–2 سنة: 90–130 (معدل 110)" },
+                { en: "3–6 years: 80–120 (avg 100)", ar: "3–6 سنوات: 80–120 (معدل 100)" },
+                { en: "7–12 years: 75–115 (avg 95)", ar: "7–12 سنة: 75–115 (معدل 95)" },
+                { en: "Adolescence: 60–100 (avg 80)", ar: "المراهقون: 60–100 (معدل 80)" },
+                { en: "Adulthood: 60–100 (avg 80)", ar: "البالغون: 60–100 (معدل 80)" }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "5-pulse-assessment",
+          heading: "تقنيات تقييم النبض — Pulse Assessment Techniques",
+          body: [
+            {
+              type: "bilingual",
+              en: "Primary pulse assessment site: Radial artery — located at inner (thumb) side of the wrist.",
+              ar: "المكان الأكثر استعمالاً (المكان الأساسي) لقياس النبض هو: الشريان الكعبري — موجود بمحاذاة الإبهام في الرسغ."
+            },
+            {
+              type: "term",
+              en: "Pulse deficit",
+              ar: "مقدار العجز في النبض",
+              phonetic: "pʌls ˈdefɪsɪt",
+              def_en: "Difference between the apical and radial pulse rate.",
+              def_ar: "هو الفرق بين معدل النبض المقاس من القلب مباشرة ومعدل النبض المقاس من الشريان الكعبري."
+            },
+            {
+              type: "bilingual",
+              en: "The pulse deficit = Apical pulse − Radial pulse",
+              ar: "مقدار العجز في النبض = النبض القمي − النبض الكعبري"
+            }
+          ]
+        },
+
+        {
+          id: "5-pulse-sites",
+          heading: "أماكن قياس النبض — Peripheral Pulse Sites",
+          body: [
+            {
+              type: "bilingual",
+              en: "Peripheral Pulse Sites (memorize all):",
+              ar: "يرجى من الطلبة حفظ جميع هذه الأماكن غيباً:"
+            },
+            {
+              type: "numbered-bilingual",
+              items: [
+                { en: "Temporal", ar: "الصدغي" },
+                { en: "Radial", ar: "الكعبري" },
+                { en: "Carotid", ar: "السباتي" },
+                { en: "Femoral", ar: "الفخذي" },
+                { en: "Brachial", ar: "العضدي" },
+                { en: "Posterior tibial", ar: "الظنبوبي الخلفي" },
+                { en: "Dorsalis pedis", ar: "ظهر القدم" },
+                { en: "Popliteal", ar: "المأبضي (خلف الركبة)" },
+                { en: "Apical", ar: "القمي (من القلب مباشرة)" }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "5-respiration",
+          heading: "ثالثاً التنفس — Respiration",
+          body: [
+            {
+              type: "term",
+              en: "Respiration",
+              ar: "التنفس",
+              phonetic: "ˌrespəˈreɪʃən",
+              def_en: "Exchange of oxygen and carbon dioxide.",
+              def_ar: "التنفس هي عملية تبادل الأكسجين وثاني أكسيد الكربون."
+            },
+            {
+              type: "term",
+              en: "Ventilation",
+              ar: "التهوية / النفس الكامل",
+              phonetic: "ˌventɪˈleɪʃən",
+              def_en: "Movement of air in and out of chest. Ventilation = inspiration (شهيق) + expiration (زفير).",
+              def_ar: "هو دخول الهواء وخروجه من الصدر. التهوية = شهيق + زفير."
+            },
+            {
+              type: "term",
+              en: "Respiratory rate",
+              ar: "معدل التنفس",
+              phonetic: "ˈrespərətri reɪt",
+              def_en: "Number of ventilations per minute.",
+              def_ar: "معدل التنفس: هو عدد الأنفاس في الدقيقة الواحدة."
+            }
+          ]
+        },
+
+        {
+          id: "5-resp-rates",
+          heading: "معدلات التنفس الطبيعية وغير الطبيعية",
+          body: [
+            {
+              type: "bilingual",
+              en: "Normal respiratory rate for adults: 12 to 20 breath per minute at rest.",
+              ar: "معدل التنفس الطبيعي عند البالغين هو من 12 إلى 20 نفس في الدقيقة الواحدة."
+            },
+            {
+              type: "bilingual",
+              en: "Normal respiratory rate for children: 15 to 25 breath per minute at rest.",
+              ar: "معدل التنفس الطبيعي عند الأطفال هو من 15 إلى 25 نفس في الدقيقة الواحدة."
+            },
+            {
+              type: "term",
+              en: "Tachypnea",
+              ar: "تاكي بنيا",
+              phonetic: "ˌtækɪpˈniːə",
+              def_en: "Rapid Respiratory Rate — higher than normal.",
+              def_ar: "هي الحالة التي يكون فيها معدل التنفس أعلى من المعدل الطبيعي."
+            },
+            {
+              type: "term",
+              en: "Bradypnea",
+              ar: "برادي بنيا",
+              phonetic: "ˌbrædɪpˈniːə",
+              def_en: "Slow respiratory rate — lower than normal.",
+              def_ar: "هي الحالة التي يكون فيها معدل التنفس أقل من المعدل الطبيعي."
+            }
+          ]
+        },
+
+        {
+          id: "5-breathing-chars",
+          heading: "سمات التنفس غير الطبيعية — Abnormal Breathing Characteristics",
+          body: [
+            {
+              type: "numbered-bilingual",
+              items: [
+                { en: "Hyperventilation: Rapid or deep breathing or both.", ar: "فرط التنفس: التنفس بعمق أو بسرعة أو كلاهما." },
+                { en: "Hypoventilation: Diminished breathing.", ar: "انعدام التنفس / تضائل عملية التنفس." },
+                { en: "Dyspnea: Difficult or labored breathing.", ar: "دسنيا: هي صعوبة التنفس." },
+                { en: "Orthopnea: Breathing that is facilitated by sitting or standing position.", ar: "اورثوبنيا: هي الحالة التي تكون فيها عملية التنفس سهلة في وضعية الجلوس أو الوقوف، وتكون صعبة في وضعية النوم على الظهر." },
+                { en: "Apnea: Absence of breathing.", ar: "ابنيا: عدم التنفس." }
+              ]
+            }
+          ]
+        },
+
+        {
+          id: "5-blood-pressure",
+          heading: "رابعاً ضغط الدم — Blood Pressure",
+          body: [
+            {
+              type: "term",
+              en: "Blood Pressure",
+              ar: "ضغط الدم",
+              phonetic: "blʌd ˈpreʃər",
+              def_en: "Force that the blood exerts within the arteries.",
+              def_ar: "ضغط الدم: هي القوة التي يبدلها الدم داخل الشرايين."
+            },
+            {
+              type: "bilingual",
+              en: "Circulating blood volume: averages 4.5–5.5 liters in adult women and 5.0–6.0 liters in adult men.",
+              ar: "معدل حجم الدم الموجود في الدورة الدموية هو 4.5–5.5 لتر عند النساء، و 5–6 لتر عند الرجال البالغين."
+            },
+            {
+              type: "bilingual",
+              en: "Lower volumes cause a decrease in blood pressure. Excess volumes cause an increase in blood pressure.",
+              ar: "نقصان حجم الدم يسبب هبوط في ضغط الدم. زيادة حجم الدم يسبب زيادة في ضغط الدم."
+            },
+            {
+              type: "term",
+              en: "Cardiac output (CO)",
+              ar: "كاردياك أوت بوت",
+              phonetic: "ˈkɑːrdɪæk ˈaʊtpʊt",
+              def_en: "Volume of blood ejected from the heart per minute. CO/m = HR/m × SV (70 ml).",
+              def_ar: "هو حجم الدم الذي يُضخ من القلب في الدقيقة الواحدة. CO/m = HR/m × SV (70 مل)."
+            },
+            {
+              type: "term",
+              en: "Stock volume (SV)",
+              ar: "ستوك فوليوم",
+              phonetic: "stɒk ˈvɒljuːm",
+              def_en: "Volume of blood ejected from the heart per beat — about 70 ml.",
+              def_ar: "ستوك فوليوم: هو حجم الدم الذي يُضخ من القلب في كل نبضة ويساوي تقريباً 70 مل من الدم."
+            }
+          ]
+        },
+
+        {
+          id: "5-bp-factors",
+          heading: "العوامل التي تؤثر على ضغط الدم — Factors Affecting BP",
+          body: [
+            {
+              type: "checkmarks",
+              items: [
+                { en: "Age: increase age leads to increase BP due to atherosclerosis.", ar: "العمر: ازدياد العمر تؤدي إلى زيادة ضغط الدم." },
+                { en: "Gender: women tend to have lower BP than men of the same age.", ar: "الجنس: ضغط الدم عند النساء غالباً أقل من الرجال لنفس الفئة العمرية." },
+                { en: "Exercise and activity: BP raised during exercise and activity.", ar: "التمارين الرياضية: ضغط الدم يزداد أثناء ممارسة التمارين الرياضية والنشاط." },
+                { en: "Emotions and pain: strong emotion tends to raise BP.", ar: "الألم والقلق والعواطف والتوتر: تؤدي إلى زيادة ضغط الدم." },
+                { en: "Lower when lying down than when sitting or standing.", ar: "ضغط الدم يكون أقل بوضعية النوم على الظهر من الجلوس أو الوقوف." }
+              ]
+            },
+            {
+              type: "bilingual",
+              en: "Higher blood pressure when: urinary bladder is full / legs are crossed / person is cold / drugs that stimulate the heart are taken.",
+              ar: "ضغط الدم يكون مرتفع في الحالات التالية: عندما تكون مثانة البول ممتلئة / عندما يكون الساقين فوق بعض / عندما يكون الشخص بارداً / عند تناول الأدوية التي تحفز القلب."
+            }
+          ]
+        },
+
+        {
+          id: "5-bp-measurements",
+          heading: "قياس ضغط الدم — Pressure Measurements",
+          body: [
+            {
+              type: "term",
+              en: "Systolic pressure",
+              ar: "ضغط الدم الانقباضي",
+              phonetic: "sɪˈstɒlɪk ˈpreʃər",
+              def_en: "Pressure within the arterial system when the heart contracts.",
+              def_ar: "هو الضغط داخل الشرايين عندما يكون القلب منقبض."
+            },
+            {
+              type: "term",
+              en: "Diastolic pressure",
+              ar: "ضغط الدم الانبساطي",
+              phonetic: "ˌdaɪəˈstɒlɪk ˈpreʃər",
+              def_en: "Pressure when the heart relaxes and fills with blood.",
+              def_ar: "هو الضغط داخل الشرايين عندما يكون القلب مرتخي."
+            },
+            {
+              type: "term",
+              en: "Pulse pressure",
+              ar: "ضغط النبض",
+              phonetic: "pʌls ˈpreʃər",
+              def_en: "Difference between systolic and diastolic blood pressure. Pulse pressure = Systolic − Diastolic.",
+              def_ar: "هو الفرق بين ضغط الدم الانقباضي وضغط الدم الانبساطي."
+            },
+            {
+              type: "bilingual",
+              en: "Blood pressure is expressed in mmHg as a fraction (SBP/DBP).",
+              ar: "وحدة قياس ضغط الدم هي mmHg ويتم كتابة القراءة بصورة كسر (SBP/DBP)."
+            }
+          ]
+        },
+
+        {
+          id: "5-bp-normal-abnormal",
+          heading: "قيم ضغط الدم الطبيعية وغير الطبيعية — مهم",
+          body: [
+            {
+              type: "bilingual",
+              en: "Normal blood pressure: Systolic = 90–139 | Diastolic = 60–89",
+              ar: "ضغط الدم الطبيعي: الانقباضي = 90–139 | الانبساطي = 60–89"
+            },
+            {
+              type: "term",
+              en: "Hypertension",
+              ar: "ارتفاع ضغط الدم",
+              phonetic: "ˌhaɪpərˈtenʃən",
+              def_en: "Systolic ≥ 140 OR Diastolic ≥ 90.",
+              def_ar: "الانقباضي أكبر من أو يساوي 140 أو الانبساطي أكبر من أو يساوي 90."
+            },
+            {
+              type: "term",
+              en: "Hypotension",
+              ar: "انخفاض ضغط الدم",
+              phonetic: "ˌhaɪpəʊˈtenʃən",
+              def_en: "Systolic ≤ 89 OR Diastolic ≤ 59.",
+              def_ar: "الانقباضي أصغر من أو يساوي 89 أو الانبساطي أصغر من أو يساوي 59."
+            },
+            {
+              type: "term",
+              en: "Postural / Orthostatic hypotension",
+              ar: "الهبوط الوضعي / الانتصابي",
+              phonetic: "ˈpɒstʃərəl ˌhɒtəʊˈtenʃən",
+              def_en: "Sudden but temporary drop in blood pressure when rising from a reclining position.",
+              def_ar: "هبوط ضغط الدم بشكل مفاجئ عندما يقف الشخص بسرعة من وضعية الاستلقاء."
+            }
+          ]
+        },
+
+        {
+          id: "5-bp-sites",
+          heading: "أماكن قياس ضغط الدم — Assessment Sites",
+          body: [
+            {
+              type: "bilingual",
+              en: "Usually assessed from brachial artery (most common).",
+              ar: "في العادة يتم قياس الضغط من الشريان العضدي (الأكثر استخداماً)."
+            },
+            {
+              type: "bilingual",
+              en: "Also may be assessed from Radial artery.",
+              ar: "أيضاً قد يتم قياس الضغط من الشريان الكعبري."
+            },
+            {
+              type: "bilingual",
+              en: "Measured over the popliteal artery (behind the knee) in case: Client's arms are missing / Both breasts removed / Client had vascular surgery.",
+              ar: "يتم قياس الضغط من الشريان البوبليتيال الموجود خلف الركبة في الحالات التالية: ذراعان المريض مبتورين / استئصال الثديين عند المريضة / إذا كان لدى المريض عملية في أوعية الذراع."
+            }
+          ]
+        },
+
+        {
+          id: "5-bp-equipment",
+          heading: "أدوات قياس ضغط الدم — Equipment",
+          body: [
+            {
+              type: "checkmarks",
+              items: [
+                { en: "Sphygmomanometer", ar: "جهاز ضغط الدم الزئبقي" },
+                { en: "Aneroid manometer", ar: "جهاز ضغط الدم الهوائي" },
+                { en: "Electronic manometer", ar: "جهاز ضغط الدم الإلكتروني" },
+                { en: "Inflatable cuff", ar: "ما يوضع على الذراع" },
+                { en: "Stethoscope", ar: "سماعة الأذن الطبية" }
+              ]
+            },
+            {
+              type: "term",
+              en: "Korotokoff sound",
+              ar: "صوت كوروتوكوف",
+              phonetic: "kɒrəˈtɒkɒf saʊnd",
+              def_en: "Sound that results from the vibrations of blood within the arterial wall.",
+              def_ar: "هو الصوت الذي يتم سماعه أثناء قياس ضغط الدم."
+            }
+          ]
+        }
+
+      ],
+
+      vocab: [
+        { en: "Vital signs",                ar: "العلامات الحيوية",                      ph: "ˈvaɪtəl saɪnz" },
+        { en: "Fever",                       ar: "الحمّى",                                ph: "ˈfiːvər" },
+        { en: "Pyrexia",                     ar: "بيركسيا / الحمّى",                      ph: "paɪˈreksɪə" },
+        { en: "Hyperthermia",                ar: "ارتفاع شديد في الحرارة",                ph: "ˌhaɪpərˈθɜːrmɪə" },
+        { en: "Hypothermia",                 ar: "انخفاض حرارة الجسم",                    ph: "ˌhaɪpəʊˈθɜːrmɪə" },
+        { en: "Antipyretics",                ar: "أدوية خافضة للحرارة",                  ph: "ˌæntɪpaɪˈretɪks" },
+        { en: "Pulse",                       ar: "النبض",                                 ph: "pʌls" },
+        { en: "Pulse rate",                  ar: "معدل النبض",                             ph: "pʌls reɪt" },
+        { en: "Tachycardia",                 ar: "تاكي كارديا / سرعة النبض",             ph: "ˌtækɪˈkɑːrdɪə" },
+        { en: "Bradycardia",                 ar: "برادي كارديا / بطء النبض",             ph: "ˌbrædɪˈkɑːrdɪə" },
+        { en: "Palpitation",                 ar: "الخفقان",                               ph: "ˌpælpɪˈteɪʃən" },
+        { en: "Radial artery",               ar: "الشريان الكعبري",                       ph: "ˈreɪdɪəl ˈɑːtərɪ" },
+        { en: "Apical pulse",                ar: "النبض القمي",                            ph: "ˈeɪpɪkəl pʌls" },
+        { en: "Pulse deficit",               ar: "مقدار العجز في النبض",                  ph: "pʌls ˈdefɪsɪt" },
+        { en: "Respiration",                 ar: "التنفس",                                ph: "ˌrespəˈreɪʃən" },
+        { en: "Ventilation",                 ar: "التهوية / النفس الكامل",                ph: "ˌventɪˈleɪʃən" },
+        { en: "Inspiration",                 ar: "الشهيق",                                ph: "ˌɪnspɪˈreɪʃən" },
+        { en: "Expiration",                  ar: "الزفير",                                ph: "ˌekspɪˈreɪʃən" },
+        { en: "Tachypnea",                   ar: "سرعة التنفس",                           ph: "ˌtækɪpˈniːə" },
+        { en: "Bradypnea",                   ar: "بطء التنفس",                            ph: "ˌbrædɪpˈniːə" },
+        { en: "Dyspnea",                     ar: "صعوبة التنفس",                          ph: "ˈdɪspnɪə" },
+        { en: "Apnea",                       ar: "عدم التنفس",                            ph: "ˈæpnɪə" },
+        { en: "Orthopnea",                   ar: "اورثوبنيا",                             ph: "ˌɔːrθɒpˈniːə" },
+        { en: "Blood pressure",              ar: "ضغط الدم",                              ph: "blʌd ˈpreʃər" },
+        { en: "Systolic pressure",           ar: "ضغط الدم الانقباضي",                   ph: "sɪˈstɒlɪk ˈpreʃər" },
+        { en: "Diastolic pressure",          ar: "ضغط الدم الانبساطي",                   ph: "ˌdaɪəˈstɒlɪk ˈpreʃər" },
+        { en: "Pulse pressure",              ar: "ضغط النبض",                             ph: "pʌls ˈpreʃər" },
+        { en: "Cardiac output",              ar: "ناتج القلب",                            ph: "ˈkɑːrdɪæk ˈaʊtpʊt" },
+        { en: "Hypertension",                ar: "ارتفاع ضغط الدم",                       ph: "ˌhaɪpərˈtenʃən" },
+        { en: "Hypotension",                 ar: "انخفاض ضغط الدم",                       ph: "ˌhaɪpəʊˈtenʃən" },
+        { en: "Sphygmomanometer",            ar: "جهاز قياس ضغط الدم الزئبقي",           ph: "ˌsfɪɡməʊməˈnɒmɪtər" },
+        { en: "Korotokoff sound",            ar: "صوت كوروتوكوف",                         ph: "kɒrəˈtɒkɒf" },
+        { en: "Stethoscope",                 ar: "سماعة الأذن الطبية",                    ph: "ˈsteθəskəʊp" },
+        { en: "Orthostatic hypotension",     ar: "الهبوط الوضعي",                         ph: "ˌɔːrθəˈstætɪk" }
+      ],
+
+      quiz: [
+        { q: "ما هي درجة الحرارة التي تُعدّ حمّى (Fever)؟", o: ["أكثر من 36.5°C", "أكثر من 37.4°C", "أكثر من 38.5°C", "أكثر من 40°C"], c: 1, ex: "Fever = الحمّى: هي الحالة التي تتجاوز فيها حرارة الجسم 37.4 درجة مئوية." },
+        { q: "ما تعريف Hyperthermia؟", o: ["حرارة أقل من 35°C", "حرارة تتجاوز 40.6°C", "حرارة طبيعية", "حرارة أقل من 37°C"], c: 1, ex: "Hyperthermia = ارتفاع حرارة الجسم: هي الحالة التي تتجاوز فيها حرارة الجسم الداخلية 40.6 درجة مئوية." },
+        { q: "ما تعريف Hypothermia؟", o: ["حرارة أعلى من 40°C", "حرارة الجسم الداخلية أقل من 35°C", "ارتفاع مفاجئ في الحرارة", "الحمّى الشديدة"], c: 1, ex: "Hypothermia = انخفاض حرارة الجسم: الحالة التي يكون فيها حرارة الجسم الداخلية أقل من 35 درجة مئوية." },
+        { q: "ما هو المعدل الطبيعي للنبض عند البالغين؟", o: ["40–80 نبضة/دقيقة", "60–100 نبضة/دقيقة", "100–140 نبضة/دقيقة", "50–90 نبضة/دقيقة"], c: 1, ex: "المعدل الطبيعي للنبض عند البالغين هو 60–100 نبضة في الدقيقة." },
+        { q: "ما تعريف Tachycardia؟", o: ["نبض أقل من 60 نبضة/دقيقة", "نبض أكثر من 100 نبضة/دقيقة", "توقف القلب", "نبض غير منتظم"], c: 1, ex: "Tachycardia = تاكي كارديا: هي الحالة التي يكون فيها معدل النبض أكثر من 100 نبضة في الدقيقة عند البالغين." },
+        { q: "ما تعريف Bradycardia؟", o: ["نبض أكثر من 100/دقيقة", "نبض أقل من 60/دقيقة عند البالغين", "توقف التنفس", "ارتفاع الضغط"], c: 1, ex: "Bradycardia = برادي كارديا: هي الحالة التي يكون فيها معدل النبض أقل من 60 نبضة في الدقيقة عند البالغين." },
+        { q: "ما هو المكان الأساسي (الأكثر استعمالاً) لقياس النبض؟", o: ["الشريان السباتي", "الشريان العضدي", "الشريان الكعبري", "الشريان الفخذي"], c: 2, ex: "المكان الأساسي الأكثر استعمالاً لقياس النبض هو الشريان الكعبري الموجود بمحاذاة الإبهام في الرسغ." },
+        { q: "ما هو معدل التنفس الطبيعي عند البالغين؟", o: ["8–12 نفس/دقيقة", "12–20 نفس/دقيقة", "20–30 نفس/دقيقة", "15–25 نفس/دقيقة"], c: 1, ex: "معدل التنفس الطبيعي عند البالغين هو من 12 إلى 20 نفس في الدقيقة الواحدة." },
+        { q: "ما تعريف Dyspnea؟", o: ["سرعة التنفس", "بطء التنفس", "صعوبة التنفس", "عدم التنفس"], c: 2, ex: "Dyspnea = دسنيا: هي صعوبة التنفس." },
+        { q: "ما هي قيم ضغط الدم الطبيعي؟", o: ["SBP: 120–160 / DBP: 70–100", "SBP: 90–139 / DBP: 60–89", "SBP: 80–120 / DBP: 50–80", "SBP: 140–180 / DBP: 90–110"], c: 1, ex: "ضغط الدم الطبيعي: الانقباضي 90–139 والانبساطي 60–89 mmHg." },
+        { q: "ما تعريف Hypertension؟", o: ["ضغط انقباضي ≤ 89", "ضغط انقباضي ≥ 140 أو انبساطي ≥ 90", "ضغط انقباضي 100–130", "انخفاض مفاجئ في الضغط"], c: 1, ex: "Hypertension = ارتفاع ضغط الدم: الانقباضي أكبر من أو يساوي 140، أو الانبساطي أكبر من أو يساوي 90." },
+        { q: "ما هو الشريان الأكثر استخداماً لقياس ضغط الدم؟", o: ["الشريان الكعبري", "الشريان العضدي", "الشريان السباتي", "الشريان الفخذي"], c: 1, ex: "في العادة يتم قياس ضغط الدم من الشريان العضدي (Brachial artery) وهو الأكثر استخداماً." },
+        { q: "Pulse deficit = ؟", o: ["النبض الكعبري − النبض القمي", "النبض القمي − النبض الكعبري", "النبض الانقباضي − الانبساطي", "معدل النبض × الحجم"], c: 1, ex: "مقدار العجز في النبض = النبض القمي (Apical) − النبض الكعبري (Radial)." }
+      ]
+    },
+
+    // ════════════════════════════════════════════════════════
+    // CHAPTER 6 — الحكيم وليد أبو جياب
+    // ════════════════════════════════════════════════════════
+    {
+      id: 6,
+      title: "الحكيم وليد أبو جياب",
+      titleEn: "Dr. Walid Abu Jiab",
+      icon: "👨‍⚕️",
+      accent: "#0ea5e9",
+      dark:   "#0c2233",
+      slides: [
+        {
+          id: "6-intro",
+          heading: "مرحباً بكم في فصل الحكيم وليد",
+          body: [
+            {
+              type: "bilingual",
+              en: "This chapter will be updated with content from Dr. Walid Abu Jiab.",
+              ar: "سيتم تحديث هذا الفصل بمحتوى الحكيم وليد أبو جياب قريباً."
+            }
+          ]
+        }
+      ],
+      vocab: [],
+      quiz: []
+    },
+
+    // ════════════════════════════════════════════════════════
+    // CHAPTER 7 — الحكيمة الاء
+    // ════════════════════════════════════════════════════════
+    {
+      id: 7,
+      title: "الحكيمة الاء",
+      titleEn: "Dr. Alaa",
+      icon: "👩‍⚕️",
+      accent: "#ec4899",
+      dark:   "#2d0a1a",
+      slides: [
+        {
+          id: "7-intro",
+          heading: "مرحباً بكم في فصل الحكيمة الاء",
+          body: [
+            {
+              type: "bilingual",
+              en: "This chapter will be updated with content from Dr. Alaa.",
+              ar: "سيتم تحديث هذا الفصل بمحتوى الحكيمة الاء قريباً."
+            }
+          ]
+        }
+      ],
+      vocab: [],
+      quiz: []
+    },
+
+    // ════════════════════════════════════════════════════════
+    // CHAPTER 8 — الصور التعريفية (20 صورة مرقمة)
+    // ════════════════════════════════════════════════════════
+    {
+      id: 8,
+      title: "الصور التعريفية",
+      titleEn: "Profile Pictures",
+      icon: "🖼️",
+      accent: "#f59e0b",
+      dark:   "#2a1a00",
+      slides: [
+        {
+          id: "8-gallery",
+          heading: "صور تعريفية — اضغط للوصول",
+          body: [
+            {
+              type: "bilingual",
+              en: "Click any image number to access its WhatsApp channel.",
+              ar: "اضغط على رقم الصورة للوصول إلى رابط الواتساب الخاص بها."
+            },
+            {
+              type: "photo-gallery",
+              items: [
+                { num: 1,  url: "https://wa.me/" },
+                { num: 2,  url: "https://wa.me/" },
+                { num: 3,  url: "https://wa.me/" },
+                { num: 4,  url: "https://wa.me/" },
+                { num: 5,  url: "https://wa.me/" },
+                { num: 6,  url: "https://wa.me/" },
+                { num: 7,  url: "https://wa.me/" },
+                { num: 8,  url: "https://wa.me/" },
+                { num: 9,  url: "https://wa.me/" },
+                { num: 10, url: "https://wa.me/" },
+                { num: 11, url: "https://wa.me/" },
+                { num: 12, url: "https://wa.me/" },
+                { num: 13, url: "https://wa.me/" },
+                { num: 14, url: "https://wa.me/" },
+                { num: 15, url: "https://wa.me/" },
+                { num: 16, url: "https://wa.me/" },
+                { num: 17, url: "https://wa.me/" },
+                { num: 18, url: "https://wa.me/" },
+                { num: 19, url: "https://wa.me/" },
+                { num: 20, url: "https://wa.me/" }
+              ]
+            }
+          ]
+        }
+      ],
       vocab: [],
       quiz: []
     }
